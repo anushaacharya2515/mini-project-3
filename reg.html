@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  </style>  
+</head>  
+<script>
+  function formops(){
+   const form = document.getElementById('form1');
+    form.style.display = 'none';}
+    function display(){
+  
+    const form = document.getElementById('form1');
+    form.style.display = 'block';}
+    function hide(){
+  
+  const form = document.getElementById('form1');
+  form.style.display = 'none';
+  document.write("Thank You for registration")}
+</script>
+
+<body onload="formops();">
+  <button type="Create" class="registerbtn" onclick="display()" >Create</button> 
+<form id="form1">  
+  <div class="container">  
+   <h1> Student Registration Form</h1> 
+  <hr>  
+   <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="20" required /> <br><br> 
+<label> Lastname: </label>   
+<input type="text" name="lastname" placeholder="Lastname" size="20"required /><br><br> 
+<label> SSLC Marks:</label> 
+<input type="test" name="marks" placeholder="SSLC Marks" size="10" required /><br><br>
+<div>  
+<label>   
+Branch :  
+</label>   
+  
+<select>  
+<option value="Branch">Branch</option>  
+<option value="CSE">CSE</option>  
+<option value="EC">EC</option>  
+<option value="ME">ME</option>  
+<option value="ADFT">ADFT</option>   
+</select>  
+</div>  
+<div>  
+<label> <br>  
+Gender :  
+</label> 
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label> <br>  
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="15"/> <br><br> 
+   
+Current Address :  
+<textarea cols="50" rows="3" placeholder="Current Address" value="address" required>  
+</textarea>  
+
+<label> <br><br><br>  
+City :  
+    </label>   
+      
+    <select>  
+    <option value="City">City</option>  
+    <option value="Udupi">Udupi</option>  
+    <option value="Bangalore">Bangalore</option>  
+    <option value="Mysore">Mysore</option>  
+    <option value="Shivamoga">Shivamoga</option>   
+    </select>   
+
+        <label> <br><br><br>  
+            State:  
+                </label>  
+                  
+                <select>  
+                <option value="State">State</option>  
+                <option value="Karnataka">Karnataka</option>  
+                <option value="Kerala">Kerala</option>  
+                <option value="Bihar">Bihar</option>  
+                <option value="Assam">Assam</option>
+                <option value="Goa">Goa</option>   
+                </select>  
+                </div>  
+                <div>  
+                <label> <br>  
+              
+    <button type="submit" class="registerbtn" onclick="hide()">submit</button>    
+</form>  
+</body>  
+</html>  
